@@ -40,6 +40,7 @@ The exploratory analysis is done in a Jupyter notebook, `notebooks/exploratory_a
 - TextBlob
 - DuckDB
 - Jupyter
+- Streamlit
 
 ## License
 
