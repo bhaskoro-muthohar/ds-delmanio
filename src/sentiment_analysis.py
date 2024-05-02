@@ -8,11 +8,8 @@ reviews_df = pd.read_csv('data/googleplaystore_user_reviews.csv')
 # Drop rows where any of the required columns have NaN values
 reviews_df.dropna(subset=['Translated_Review', 'Sentiment'], inplace=True)
 
-# Function to clean and analyze sentiment of reviews
 def analyze_sentiment(review):
-    # Clean the review text data
     review = str(review).lower().strip()
-    # Analyze sentiment
     blob = TextBlob(review)
     return blob.sentiment.polarity, blob.sentiment.subjectivity
 
